@@ -1,0 +1,714 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		D3128E9F1E797C33001DD681 /* Recipes.sqlite in Resources */ = {isa = PBXBuildFile; fileRef = D3128E9E1E797C33001DD681 /* Recipes.sqlite */; };
+		D31D5D531E6EA87900EED135 /* DBManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = D31D5D521E6EA87900EED135 /* DBManager.swift */; };
+		D31D5D571E6F1DDF00EED135 /* libsqlite3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = D31D5D561E6F1DDF00EED135 /* libsqlite3.dylib */; };
+		D32435B01E7DB30600007DA6 /* CollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D32435AF1E7DB30600007DA6 /* CollectionViewController.swift */; };
+		D32435B41E7DB57E00007DA6 /* SWRevealViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D32435B31E7DB57E00007DA6 /* SWRevealViewController.m */; };
+		D32435BF1E80035600007DA6 /* CatTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D32435BE1E80035600007DA6 /* CatTableViewController.swift */; };
+		D32435C11E80375C00007DA6 /* CategoriesTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D32435C01E80375C00007DA6 /* CategoriesTableViewController.swift */; };
+		D32435C51E80417B00007DA6 /* CategoryTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D32435C41E80417B00007DA6 /* CategoryTableViewCell.swift */; };
+		D34D82E41E6568AA00CA3BA0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D34D82E31E6568AA00CA3BA0 /* AppDelegate.swift */; };
+		D34D82E91E6568AA00CA3BA0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D34D82E71E6568AA00CA3BA0 /* Main.storyboard */; };
+		D34D82EB1E6568AA00CA3BA0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D34D82EA1E6568AA00CA3BA0 /* Assets.xcassets */; };
+		D34D82EE1E6568AA00CA3BA0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D34D82EC1E6568AA00CA3BA0 /* LaunchScreen.storyboard */; };
+		D34D82F91E6568AA00CA3BA0 /* JamAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D34D82F81E6568AA00CA3BA0 /* JamAppTests.swift */; };
+		D34D83041E6568AA00CA3BA0 /* JamAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D34D83031E6568AA00CA3BA0 /* JamAppUITests.swift */; };
+		D34D831F1E68321700CA3BA0 /* AboutUs.swift in Sources */ = {isa = PBXBuildFile; fileRef = D34D831E1E68321700CA3BA0 /* AboutUs.swift */; };
+		D34D83211E68323500CA3BA0 /* AboutProject.swift in Sources */ = {isa = PBXBuildFile; fileRef = D34D83201E68323500CA3BA0 /* AboutProject.swift */; };
+		D34D83231E695F0C00CA3BA0 /* UIImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = D34D83221E695F0C00CA3BA0 /* UIImage.swift */; };
+		D34D83251E695F5500CA3BA0 /* PhotoCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D34D83241E695F5500CA3BA0 /* PhotoCell.swift */; };
+		D34D832A1E695FD500CA3BA0 /* ZoomedPhotoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D34D83291E695FD500CA3BA0 /* ZoomedPhotoViewController.swift */; };
+		D34D832E1E69984000CA3BA0 /* libsqlite3.0.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = D34D832D1E69984000CA3BA0 /* libsqlite3.0.tbd */; };
+		D34D833B1E699AB100CA3BA0 /* FMDatabase.m in Sources */ = {isa = PBXBuildFile; fileRef = D34D83311E699AB100CA3BA0 /* FMDatabase.m */; };
+		D34D833C1E699AB100CA3BA0 /* FMDatabaseAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = D34D83331E699AB100CA3BA0 /* FMDatabaseAdditions.m */; };
+		D34D833D1E699AB100CA3BA0 /* FMDatabasePool.m in Sources */ = {isa = PBXBuildFile; fileRef = D34D83351E699AB100CA3BA0 /* FMDatabasePool.m */; };
+		D34D833E1E699AB100CA3BA0 /* FMDatabaseQueue.m in Sources */ = {isa = PBXBuildFile; fileRef = D34D83371E699AB100CA3BA0 /* FMDatabaseQueue.m */; };
+		D34D833F1E699AB100CA3BA0 /* FMResultSet.m in Sources */ = {isa = PBXBuildFile; fileRef = D34D833A1E699AB100CA3BA0 /* FMResultSet.m */; };
+		D370F9F41E938EA90029E3A0 /* DetailCategoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D370F9F31E938EA90029E3A0 /* DetailCategoryViewController.swift */; };
+		D37CD8031E97CE82009435B5 /* RecipeTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D37CD8021E97CE82009435B5 /* RecipeTableViewController.swift */; };
+		D37CD8051E97D521009435B5 /* RecipeTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D37CD8041E97D521009435B5 /* RecipeTableViewCell.swift */; };
+		D37CD8071E97DF49009435B5 /* RecipeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D37CD8061E97DF49009435B5 /* RecipeViewController.swift */; };
+		D3ABBCC41E9517F200A54CEB /* Recipe.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3ABBCC31E9517F200A54CEB /* Recipe.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		D34D82F51E6568AA00CA3BA0 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D34D82D81E6568A900CA3BA0 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D34D82DF1E6568A900CA3BA0;
+			remoteInfo = JamApp;
+		};
+		D34D83001E6568AA00CA3BA0 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D34D82D81E6568A900CA3BA0 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D34D82DF1E6568A900CA3BA0;
+			remoteInfo = JamApp;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		D3128E9E1E797C33001DD681 /* Recipes.sqlite */ = {isa = PBXFileReference; lastKnownFileType = file; path = Recipes.sqlite; sourceTree = "<group>"; };
+		D31D5D521E6EA87900EED135 /* DBManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DBManager.swift; sourceTree = "<group>"; };
+		D31D5D561E6F1DDF00EED135 /* libsqlite3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsqlite3.dylib; path = ../../../../Downloads/libsqlite3.dylib; sourceTree = "<group>"; };
+		D32435AF1E7DB30600007DA6 /* CollectionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CollectionViewController.swift; sourceTree = "<group>"; };
+		D32435B11E7DB57E00007DA6 /* HamburgerMenu-Bridging-Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "HamburgerMenu-Bridging-Header.h"; sourceTree = "<group>"; };
+		D32435B21E7DB57E00007DA6 /* SWRevealViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SWRevealViewController.h; sourceTree = "<group>"; };
+		D32435B31E7DB57E00007DA6 /* SWRevealViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SWRevealViewController.m; sourceTree = "<group>"; };
+		D32435BE1E80035600007DA6 /* CatTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CatTableViewController.swift; sourceTree = "<group>"; };
+		D32435C01E80375C00007DA6 /* CategoriesTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CategoriesTableViewController.swift; sourceTree = "<group>"; };
+		D32435C41E80417B00007DA6 /* CategoryTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CategoryTableViewCell.swift; sourceTree = "<group>"; };
+		D34D82E01E6568AA00CA3BA0 /* JamApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = JamApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		D34D82E31E6568AA00CA3BA0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		D34D82E81E6568AA00CA3BA0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		D34D82EA1E6568AA00CA3BA0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		D34D82ED1E6568AA00CA3BA0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		D34D82EF1E6568AA00CA3BA0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D34D82F41E6568AA00CA3BA0 /* JamAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = JamAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		D34D82F81E6568AA00CA3BA0 /* JamAppTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JamAppTests.swift; sourceTree = "<group>"; };
+		D34D82FA1E6568AA00CA3BA0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D34D82FF1E6568AA00CA3BA0 /* JamAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = JamAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		D34D83031E6568AA00CA3BA0 /* JamAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JamAppUITests.swift; sourceTree = "<group>"; };
+		D34D83051E6568AA00CA3BA0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D34D831E1E68321700CA3BA0 /* AboutUs.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AboutUs.swift; sourceTree = "<group>"; };
+		D34D83201E68323500CA3BA0 /* AboutProject.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AboutProject.swift; sourceTree = "<group>"; };
+		D34D83221E695F0C00CA3BA0 /* UIImage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIImage.swift; sourceTree = "<group>"; };
+		D34D83241E695F5500CA3BA0 /* PhotoCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PhotoCell.swift; sourceTree = "<group>"; };
+		D34D83291E695FD500CA3BA0 /* ZoomedPhotoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ZoomedPhotoViewController.swift; sourceTree = "<group>"; };
+		D34D832D1E69984000CA3BA0 /* libsqlite3.0.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.0.tbd; path = usr/lib/libsqlite3.0.tbd; sourceTree = SDKROOT; };
+		D34D832F1E699AB100CA3BA0 /* JamApp-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "JamApp-Bridging-Header.h"; sourceTree = "<group>"; };
+		D34D83301E699AB100CA3BA0 /* FMDatabase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMDatabase.h; sourceTree = "<group>"; };
+		D34D83311E699AB100CA3BA0 /* FMDatabase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMDatabase.m; sourceTree = "<group>"; };
+		D34D83321E699AB100CA3BA0 /* FMDatabaseAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMDatabaseAdditions.h; sourceTree = "<group>"; };
+		D34D83331E699AB100CA3BA0 /* FMDatabaseAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMDatabaseAdditions.m; sourceTree = "<group>"; };
+		D34D83341E699AB100CA3BA0 /* FMDatabasePool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMDatabasePool.h; sourceTree = "<group>"; };
+		D34D83351E699AB100CA3BA0 /* FMDatabasePool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMDatabasePool.m; sourceTree = "<group>"; };
+		D34D83361E699AB100CA3BA0 /* FMDatabaseQueue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMDatabaseQueue.h; sourceTree = "<group>"; };
+		D34D83371E699AB100CA3BA0 /* FMDatabaseQueue.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMDatabaseQueue.m; sourceTree = "<group>"; };
+		D34D83381E699AB100CA3BA0 /* FMDB.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMDB.h; sourceTree = "<group>"; };
+		D34D83391E699AB100CA3BA0 /* FMResultSet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMResultSet.h; sourceTree = "<group>"; };
+		D34D833A1E699AB100CA3BA0 /* FMResultSet.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMResultSet.m; sourceTree = "<group>"; };
+		D370F9F31E938EA90029E3A0 /* DetailCategoryViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailCategoryViewController.swift; sourceTree = "<group>"; };
+		D37CD8021E97CE82009435B5 /* RecipeTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RecipeTableViewController.swift; sourceTree = "<group>"; };
+		D37CD8041E97D521009435B5 /* RecipeTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RecipeTableViewCell.swift; sourceTree = "<group>"; };
+		D37CD8061E97DF49009435B5 /* RecipeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RecipeViewController.swift; sourceTree = "<group>"; };
+		D3ABBCC31E9517F200A54CEB /* Recipe.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Recipe.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		D34D82DD1E6568A900CA3BA0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D31D5D571E6F1DDF00EED135 /* libsqlite3.dylib in Frameworks */,
+				D34D832E1E69984000CA3BA0 /* libsqlite3.0.tbd in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D34D82F11E6568AA00CA3BA0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D34D82FC1E6568AA00CA3BA0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		D31D5D511E6EA6FD00EED135 /* FMDB */ = {
+			isa = PBXGroup;
+			children = (
+				D32435B21E7DB57E00007DA6 /* SWRevealViewController.h */,
+				D32435B31E7DB57E00007DA6 /* SWRevealViewController.m */,
+				D34D832F1E699AB100CA3BA0 /* JamApp-Bridging-Header.h */,
+				D34D83301E699AB100CA3BA0 /* FMDatabase.h */,
+				D34D83311E699AB100CA3BA0 /* FMDatabase.m */,
+				D34D83321E699AB100CA3BA0 /* FMDatabaseAdditions.h */,
+				D34D83331E699AB100CA3BA0 /* FMDatabaseAdditions.m */,
+				D34D83341E699AB100CA3BA0 /* FMDatabasePool.h */,
+				D34D83351E699AB100CA3BA0 /* FMDatabasePool.m */,
+				D34D83361E699AB100CA3BA0 /* FMDatabaseQueue.h */,
+				D34D83371E699AB100CA3BA0 /* FMDatabaseQueue.m */,
+				D34D83381E699AB100CA3BA0 /* FMDB.h */,
+				D34D83391E699AB100CA3BA0 /* FMResultSet.h */,
+				D34D833A1E699AB100CA3BA0 /* FMResultSet.m */,
+			);
+			name = FMDB;
+			sourceTree = "<group>";
+		};
+		D32435B51E7DB58700007DA6 /* Burger Menu */ = {
+			isa = PBXGroup;
+			children = (
+				D32435B11E7DB57E00007DA6 /* HamburgerMenu-Bridging-Header.h */,
+			);
+			name = "Burger Menu";
+			sourceTree = "<group>";
+		};
+		D32435C61E80419200007DA6 /* Category */ = {
+			isa = PBXGroup;
+			children = (
+				D370F9F31E938EA90029E3A0 /* DetailCategoryViewController.swift */,
+				D32435BE1E80035600007DA6 /* CatTableViewController.swift */,
+				D32435C01E80375C00007DA6 /* CategoriesTableViewController.swift */,
+				D32435C41E80417B00007DA6 /* CategoryTableViewCell.swift */,
+			);
+			name = Category;
+			sourceTree = "<group>";
+		};
+		D34D82D71E6568A900CA3BA0 = {
+			isa = PBXGroup;
+			children = (
+				D34D82E21E6568AA00CA3BA0 /* JamApp */,
+				D34D82F71E6568AA00CA3BA0 /* JamAppTests */,
+				D34D83021E6568AA00CA3BA0 /* JamAppUITests */,
+				D34D82E11E6568AA00CA3BA0 /* Products */,
+				D34D832C1E69984000CA3BA0 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		D34D82E11E6568AA00CA3BA0 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				D34D82E01E6568AA00CA3BA0 /* JamApp.app */,
+				D34D82F41E6568AA00CA3BA0 /* JamAppTests.xctest */,
+				D34D82FF1E6568AA00CA3BA0 /* JamAppUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		D34D82E21E6568AA00CA3BA0 /* JamApp */ = {
+			isa = PBXGroup;
+			children = (
+				D32435B51E7DB58700007DA6 /* Burger Menu */,
+				D31D5D511E6EA6FD00EED135 /* FMDB */,
+				D34D83111E65692200CA3BA0 /* SupportingFiles */,
+				D350C7F41E781CF7008FA540 /* Recipes */,
+				D32435C61E80419200007DA6 /* Category */,
+				D34D83281E695FA000CA3BA0 /* Assortments */,
+				D34D831E1E68321700CA3BA0 /* AboutUs.swift */,
+				D34D83201E68323500CA3BA0 /* AboutProject.swift */,
+				D34D82E71E6568AA00CA3BA0 /* Main.storyboard */,
+				D31D5D521E6EA87900EED135 /* DBManager.swift */,
+			);
+			path = JamApp;
+			sourceTree = "<group>";
+		};
+		D34D82F71E6568AA00CA3BA0 /* JamAppTests */ = {
+			isa = PBXGroup;
+			children = (
+				D34D82F81E6568AA00CA3BA0 /* JamAppTests.swift */,
+				D34D82FA1E6568AA00CA3BA0 /* Info.plist */,
+			);
+			path = JamAppTests;
+			sourceTree = "<group>";
+		};
+		D34D83021E6568AA00CA3BA0 /* JamAppUITests */ = {
+			isa = PBXGroup;
+			children = (
+				D34D83031E6568AA00CA3BA0 /* JamAppUITests.swift */,
+				D34D83051E6568AA00CA3BA0 /* Info.plist */,
+			);
+			path = JamAppUITests;
+			sourceTree = "<group>";
+		};
+		D34D83111E65692200CA3BA0 /* SupportingFiles */ = {
+			isa = PBXGroup;
+			children = (
+				D3128E9E1E797C33001DD681 /* Recipes.sqlite */,
+				D34D82E31E6568AA00CA3BA0 /* AppDelegate.swift */,
+				D34D82EA1E6568AA00CA3BA0 /* Assets.xcassets */,
+				D34D82EC1E6568AA00CA3BA0 /* LaunchScreen.storyboard */,
+				D34D82EF1E6568AA00CA3BA0 /* Info.plist */,
+			);
+			name = SupportingFiles;
+			sourceTree = "<group>";
+		};
+		D34D83281E695FA000CA3BA0 /* Assortments */ = {
+			isa = PBXGroup;
+			children = (
+				D34D83221E695F0C00CA3BA0 /* UIImage.swift */,
+				D34D83241E695F5500CA3BA0 /* PhotoCell.swift */,
+				D32435AF1E7DB30600007DA6 /* CollectionViewController.swift */,
+				D34D83291E695FD500CA3BA0 /* ZoomedPhotoViewController.swift */,
+			);
+			name = Assortments;
+			sourceTree = "<group>";
+		};
+		D34D832C1E69984000CA3BA0 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D31D5D561E6F1DDF00EED135 /* libsqlite3.dylib */,
+				D34D832D1E69984000CA3BA0 /* libsqlite3.0.tbd */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		D350C7F41E781CF7008FA540 /* Recipes */ = {
+			isa = PBXGroup;
+			children = (
+				D37CD8021E97CE82009435B5 /* RecipeTableViewController.swift */,
+				D37CD8061E97DF49009435B5 /* RecipeViewController.swift */,
+				D37CD8041E97D521009435B5 /* RecipeTableViewCell.swift */,
+				D3ABBCC31E9517F200A54CEB /* Recipe.swift */,
+			);
+			name = Recipes;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		D34D82DF1E6568A900CA3BA0 /* JamApp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D34D83081E6568AA00CA3BA0 /* Build configuration list for PBXNativeTarget "JamApp" */;
+			buildPhases = (
+				D34D82DC1E6568A900CA3BA0 /* Sources */,
+				D34D82DD1E6568A900CA3BA0 /* Frameworks */,
+				D34D82DE1E6568A900CA3BA0 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = JamApp;
+			productName = JamApp;
+			productReference = D34D82E01E6568AA00CA3BA0 /* JamApp.app */;
+			productType = "com.apple.product-type.application";
+		};
+		D34D82F31E6568AA00CA3BA0 /* JamAppTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D34D830B1E6568AA00CA3BA0 /* Build configuration list for PBXNativeTarget "JamAppTests" */;
+			buildPhases = (
+				D34D82F01E6568AA00CA3BA0 /* Sources */,
+				D34D82F11E6568AA00CA3BA0 /* Frameworks */,
+				D34D82F21E6568AA00CA3BA0 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				D34D82F61E6568AA00CA3BA0 /* PBXTargetDependency */,
+			);
+			name = JamAppTests;
+			productName = JamAppTests;
+			productReference = D34D82F41E6568AA00CA3BA0 /* JamAppTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		D34D82FE1E6568AA00CA3BA0 /* JamAppUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D34D830E1E6568AA00CA3BA0 /* Build configuration list for PBXNativeTarget "JamAppUITests" */;
+			buildPhases = (
+				D34D82FB1E6568AA00CA3BA0 /* Sources */,
+				D34D82FC1E6568AA00CA3BA0 /* Frameworks */,
+				D34D82FD1E6568AA00CA3BA0 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				D34D83011E6568AA00CA3BA0 /* PBXTargetDependency */,
+			);
+			name = JamAppUITests;
+			productName = JamAppUITests;
+			productReference = D34D82FF1E6568AA00CA3BA0 /* JamAppUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D34D82D81E6568A900CA3BA0 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0820;
+				LastUpgradeCheck = 0820;
+				ORGANIZATIONNAME = Vlados;
+				TargetAttributes = {
+					D34D82DF1E6568A900CA3BA0 = {
+						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = VQ64V5ZK3R;
+						LastSwiftMigration = 0820;
+						ProvisioningStyle = Automatic;
+					};
+					D34D82F31E6568AA00CA3BA0 = {
+						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = VQ64V5ZK3R;
+						ProvisioningStyle = Automatic;
+						TestTargetID = D34D82DF1E6568A900CA3BA0;
+					};
+					D34D82FE1E6568AA00CA3BA0 = {
+						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = VQ64V5ZK3R;
+						ProvisioningStyle = Automatic;
+						TestTargetID = D34D82DF1E6568A900CA3BA0;
+					};
+				};
+			};
+			buildConfigurationList = D34D82DB1E6568A900CA3BA0 /* Build configuration list for PBXProject "JamApp" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = D34D82D71E6568A900CA3BA0;
+			productRefGroup = D34D82E11E6568AA00CA3BA0 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				D34D82DF1E6568A900CA3BA0 /* JamApp */,
+				D34D82F31E6568AA00CA3BA0 /* JamAppTests */,
+				D34D82FE1E6568AA00CA3BA0 /* JamAppUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		D34D82DE1E6568A900CA3BA0 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D34D82EE1E6568AA00CA3BA0 /* LaunchScreen.storyboard in Resources */,
+				D3128E9F1E797C33001DD681 /* Recipes.sqlite in Resources */,
+				D34D82EB1E6568AA00CA3BA0 /* Assets.xcassets in Resources */,
+				D34D82E91E6568AA00CA3BA0 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D34D82F21E6568AA00CA3BA0 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D34D82FD1E6568AA00CA3BA0 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		D34D82DC1E6568A900CA3BA0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D34D833B1E699AB100CA3BA0 /* FMDatabase.m in Sources */,
+				D32435C11E80375C00007DA6 /* CategoriesTableViewController.swift in Sources */,
+				D34D833C1E699AB100CA3BA0 /* FMDatabaseAdditions.m in Sources */,
+				D37CD8071E97DF49009435B5 /* RecipeViewController.swift in Sources */,
+				D34D82E41E6568AA00CA3BA0 /* AppDelegate.swift in Sources */,
+				D34D833D1E699AB100CA3BA0 /* FMDatabasePool.m in Sources */,
+				D32435C51E80417B00007DA6 /* CategoryTableViewCell.swift in Sources */,
+				D34D833E1E699AB100CA3BA0 /* FMDatabaseQueue.m in Sources */,
+				D34D83251E695F5500CA3BA0 /* PhotoCell.swift in Sources */,
+				D37CD8031E97CE82009435B5 /* RecipeTableViewController.swift in Sources */,
+				D34D83231E695F0C00CA3BA0 /* UIImage.swift in Sources */,
+				D32435BF1E80035600007DA6 /* CatTableViewController.swift in Sources */,
+				D32435B41E7DB57E00007DA6 /* SWRevealViewController.m in Sources */,
+				D37CD8051E97D521009435B5 /* RecipeTableViewCell.swift in Sources */,
+				D34D831F1E68321700CA3BA0 /* AboutUs.swift in Sources */,
+				D31D5D531E6EA87900EED135 /* DBManager.swift in Sources */,
+				D370F9F41E938EA90029E3A0 /* DetailCategoryViewController.swift in Sources */,
+				D34D833F1E699AB100CA3BA0 /* FMResultSet.m in Sources */,
+				D32435B01E7DB30600007DA6 /* CollectionViewController.swift in Sources */,
+				D34D832A1E695FD500CA3BA0 /* ZoomedPhotoViewController.swift in Sources */,
+				D34D83211E68323500CA3BA0 /* AboutProject.swift in Sources */,
+				D3ABBCC41E9517F200A54CEB /* Recipe.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D34D82F01E6568AA00CA3BA0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D34D82F91E6568AA00CA3BA0 /* JamAppTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D34D82FB1E6568AA00CA3BA0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D34D83041E6568AA00CA3BA0 /* JamAppUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		D34D82F61E6568AA00CA3BA0 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D34D82DF1E6568A900CA3BA0 /* JamApp */;
+			targetProxy = D34D82F51E6568AA00CA3BA0 /* PBXContainerItemProxy */;
+		};
+		D34D83011E6568AA00CA3BA0 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D34D82DF1E6568A900CA3BA0 /* JamApp */;
+			targetProxy = D34D83001E6568AA00CA3BA0 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		D34D82E71E6568AA00CA3BA0 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D34D82E81E6568AA00CA3BA0 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		D34D82EC1E6568AA00CA3BA0 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D34D82ED1E6568AA00CA3BA0 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		D34D83061E6568AA00CA3BA0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		D34D83071E6568AA00CA3BA0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		D34D83091E6568AA00CA3BA0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CLANG_ENABLE_MODULES = YES;
+				DEVELOPMENT_TEAM = VQ64V5ZK3R;
+				INFOPLIST_FILE = JamApp/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = pj.JamApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "JamApp/JamApp-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		D34D830A1E6568AA00CA3BA0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CLANG_ENABLE_MODULES = YES;
+				DEVELOPMENT_TEAM = VQ64V5ZK3R;
+				INFOPLIST_FILE = JamApp/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = pj.JamApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "JamApp/JamApp-Bridging-Header.h";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+		D34D830C1E6568AA00CA3BA0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = VQ64V5ZK3R;
+				INFOPLIST_FILE = JamAppTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = pj.JamAppTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/JamApp.app/JamApp";
+			};
+			name = Debug;
+		};
+		D34D830D1E6568AA00CA3BA0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = VQ64V5ZK3R;
+				INFOPLIST_FILE = JamAppTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = pj.JamAppTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/JamApp.app/JamApp";
+			};
+			name = Release;
+		};
+		D34D830F1E6568AA00CA3BA0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				DEVELOPMENT_TEAM = VQ64V5ZK3R;
+				INFOPLIST_FILE = JamAppUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = pj.JamAppUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = JamApp;
+			};
+			name = Debug;
+		};
+		D34D83101E6568AA00CA3BA0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				DEVELOPMENT_TEAM = VQ64V5ZK3R;
+				INFOPLIST_FILE = JamAppUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = pj.JamAppUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = JamApp;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		D34D82DB1E6568A900CA3BA0 /* Build configuration list for PBXProject "JamApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D34D83061E6568AA00CA3BA0 /* Debug */,
+				D34D83071E6568AA00CA3BA0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D34D83081E6568AA00CA3BA0 /* Build configuration list for PBXNativeTarget "JamApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D34D83091E6568AA00CA3BA0 /* Debug */,
+				D34D830A1E6568AA00CA3BA0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D34D830B1E6568AA00CA3BA0 /* Build configuration list for PBXNativeTarget "JamAppTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D34D830C1E6568AA00CA3BA0 /* Debug */,
+				D34D830D1E6568AA00CA3BA0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D34D830E1E6568AA00CA3BA0 /* Build configuration list for PBXNativeTarget "JamAppUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D34D830F1E6568AA00CA3BA0 /* Debug */,
+				D34D83101E6568AA00CA3BA0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D34D82D81E6568A900CA3BA0 /* Project object */;
+}
